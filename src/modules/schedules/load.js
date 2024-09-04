@@ -12,5 +12,5 @@ export async function schedulesDay() {
   const dailySchedules = await scheduleFetchByDay({ date });
   scheduleShow({ dailySchedules });
   //Renderiza as horas disponíveis
-  hoursLoad({ date });
+  hoursLoad({ date, dailySchedules });
 }
